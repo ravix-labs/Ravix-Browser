@@ -5,6 +5,76 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [2.1.8] - 2026-06-11
+
+### ✨ Added
+
+#### 🎬 Picture-in-Picture
+
+* Added improved Picture-in-Picture support on Vivo and FuntouchOS devices
+* Added guidance for enabling required system permissions when PiP is unavailable
+
+---
+
+### 🐛 Fixed
+
+#### 📜 Userscripts & Extensions
+
+* Fixed Tampermonkey "Import from File" functionality
+* Fixed session reactivation issues after selecting files from the system picker
+* Improved compatibility with extension popups and import workflows
+
+#### 🔄 Browser Navigation
+
+* Fixed Refresh button behavior on Power Tabs
+* Fixed Pull-to-Refresh occasionally remaining active indefinitely
+* Fixed notification updates showing information from background tabs
+* Fixed security indicators updating from inactive tabs
+
+#### 🗂 Tab Management
+
+* Fixed white-screen issues after switching tabs
+* Fixed rendering issues during tab transitions
+* Improved session recovery after compositor failures
+
+#### 💻 Code Editor
+
+* Fixed crashes when opening files from external sources
+
+#### ⚡ Stability
+
+* Fixed ANR conditions during app backgrounding
+* Fixed foreground service startup failures
+* Improved thumbnail generation workflow
+* Improved overall browser reliability
+
+---
+
+### 🔧 Improved
+
+#### Performance
+
+* Improved Power Tab state management
+* Improved background tab event handling
+* Improved tab switching reliability
+* Improved foreground service resilience
+
+#### Platform Compatibility
+
+* Improved Android 14+ foreground service compliance
+* Removed legacy self-update infrastructure
+* Improved Play Store compatibility and policy compliance
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.8 focuses on browser stability, Power Tab reliability, extension compatibility, and improved Picture-in-Picture support while continuing to refine the overall browsing experience.
+
+---
+(Skipped 2.1.5, 2.1.6, 2.1.7 due to Google Playstore policy compliance)
+---
+
 ## [2.1.4] - 2026-06-09 
 
 ### 🐛 Fixed
