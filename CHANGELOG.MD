@@ -5,6 +5,16 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [2.1.9] - 2026-06-11
+
+### ✨ Added
+* Added Google Play Billing
+* Added Ravix Pro subscription
+---
+### 🎯 Focus
+Ravix 2.1.9 focuses only for Google Play Billing implementation
+---
+
 ## [2.1.8] - 2026-06-11
 
 ### ✨ Added
