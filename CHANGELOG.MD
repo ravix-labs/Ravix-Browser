@@ -4,18 +4,81 @@ All notable changes to Ravix Browser will be documented in this file.
 
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
+## [v2.1.10] - 2026-06-12
 
-## [2.1.9] - 2026-06-11
+### ✨ Added
+
+#### 🧩 WebExtension Infrastructure
+
+* Added built-in Ravix WebExtension framework
+* Improved communication between browser features and web content
+* Enhanced userscript integration and compatibility
+
+#### 📊 Browsing History
+* Improved autocomplete suggestions using visit frequency data
+* visit frequency data are stored locally on your device
+
+---
+
+### 🔧 Improved
+
+#### 📜 Userscripts
+
+* Improved userscript injection reliability
+* Improved userscript compatibility with modern websites
+* Improved communication between userscripts and browser features
+
+#### 🔍 Search & Navigation
+
+* Improved new-tab search workflow
+* Tapping the new-tab search box now focuses the address bar
+* Improved keyboard behavior when opening new tabs
+
+#### 🗂 Tab Groups
+
+* Improved child tab handling
+* Tabs opened from grouped tabs now automatically inherit the parent group
+
+#### 💾 Session Restore
+
+* Improved scroll position saving
+* Improved page position restoration after browser restarts
+
+---
+
+### 🐛 Fixed
+
+#### 🪟 Popup Tabs
+
+* Fixed websites creating excessive duplicate popup tabs
+* Improved handling of repeated authentication popups
+
+#### 📊 Most Visited
+
+* Fixed autocomplete suggestions not accurately reflecting browsing frequency
+
+#### 📄 Session Restore
+
+* Fixed scroll position occasionally being lost after closing or restarting the browser
+
+---
+
+### 🎯 Focus
+
+Ravix v2.1.10 focuses on improving userscript infrastructure, browser intelligence, tab organization, and session restoration while reducing unwanted popup behavior and improving the overall browsing experience.
+
+---
+## [v2.1.9] - 2026-06-11
 
 ### ✨ Added
 * Added Google Play Billing
 * Added Ravix Pro subscription
 ---
 ### 🎯 Focus
-Ravix 2.1.9 focuses only for Google Play Billing implementation
+Ravix v2.1.9 focuses only for Google Play Billing implementation
 ---
 
-## [2.1.8] - 2026-06-11
+## [v2.1.8] - 2026-06-11
 
 ### ✨ Added
 
@@ -79,13 +142,13 @@ Ravix 2.1.9 focuses only for Google Play Billing implementation
 
 ### 🎯 Focus
 
-Ravix 2.1.8 focuses on browser stability, Power Tab reliability, extension compatibility, and improved Picture-in-Picture support while continuing to refine the overall browsing experience.
+Ravix v2.1.8 focuses on browser stability, Power Tab reliability, extension compatibility, and improved Picture-in-Picture support while continuing to refine the overall browsing experience.
 
 ---
 (Skipped 2.1.5, 2.1.6, 2.1.7 due to Google Playstore policy compliance)
 ---
 
-## [2.1.4] - 2026-06-09 
+## [v2.1.4] - 2026-06-09 
 
 ### 🐛 Fixed
 
@@ -106,11 +169,11 @@ Ravix 2.1.8 focuses on browser stability, Power Tab reliability, extension compa
 
 ### 🎯 Focus
 
-Ravix 2.1.4 is a quick-fix release focused on improving startup behavior and tab-switching reliability, resulting in a smoother and more polished browsing experience.
+Ravix v2.1.4 is a quick-fix release focused on improving startup behavior and tab-switching reliability, resulting in a smoother and more polished browsing experience.
 
 
 ---
-## [2.1.3] - 2026-06-08
+## [v2.1.3] - 2026-06-08
 
 ### 🔧 Improved
 
@@ -158,7 +221,7 @@ Ravix 2.1.4 is a quick-fix release focused on improving startup behavior and tab
 
 ### 🎯 Focus
 
-Ravix 2.1.3 focuses on performance, stability, and reliability with major fixes for tab management, GeckoView behavior, Power Tabs, userscript imports, and browser responsiveness.
+Ravix v2.1.3 focuses on performance, stability, and reliability with major fixes for tab management, GeckoView behavior, Power Tabs, userscript imports, and browser responsiveness.
 
 ---
 
