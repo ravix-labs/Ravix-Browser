@@ -4,6 +4,146 @@ All notable changes to Ravix Browser will be documented in this file.
 
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
+
+## [2.1.13] - 2026-06-12
+
+### ✨ Added
+
+#### ⚡ Power Tabs
+
+* Added live running-script status in the persistent notification
+* Added active script monitoring for Power Tabs
+* Improved visibility of background automation activity
+
+#### 🔔 Notifications
+
+* Improved GM_notification support for background Power Tabs
+* Added reliable notification handling for headless Power Tab sessions
+
+---
+
+### 🔧 Improved
+
+#### 🗂 Tab Recovery
+
+* Improved stale tab recovery after extended background periods
+* Improved automatic rebuilding of terminated sessions
+* Improved foreground restoration reliability on aggressive Android OEMs
+
+#### 📜 Userscripts
+
+* Improved long-running userscript performance
+* Reduced background overhead from console monitoring
+* Improved script execution reliability in Power Tabs
+
+#### 🌐 Browser Stability
+
+* Improved dead-tab detection and recovery
+* Improved compositor recovery and rendering reliability
+* Improved session restoration after process termination
+
+#### 📊 Performance Tools
+
+* Added more accurate memory reporting
+* Improved visibility of total Ravix memory usage across all browser processes
+
+---
+
+### 🐛 Fixed
+
+#### 🗂 Tabs
+
+* Fixed blank or unresponsive tabs after extended backgrounding
+* Fixed dead-tab recovery failures on some devices
+* Fixed session restoration issues caused by terminated content processes
+
+#### ⚡ Power Tabs
+
+* Fixed Power Tab lag during long-running sessions
+* Fixed background scripts causing unnecessary performance overhead
+* Fixed Power Tabs losing notification functionality after browser restarts
+
+#### 🔔 Notifications
+
+* Fixed GM_notification not working in headless Power Tabs
+* Fixed background notification delivery issues
+* Fixed running-script status not being reflected in the persistent notification
+
+#### 📝 Logging
+
+* Fixed Ravix log files growing without size limits
+* Improved log rotation and storage management
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.13 focuses on Power Tab reliability, dead-tab recovery, long-running userscript performance, notification delivery, and improved browser stability on aggressive Android devices.
+
+---
+
+## [v2.1.11/v2.1.12] - 2026-06-13
+
+### ✨ Added
+
+#### ⚡ Power Tools
+
+* Added Performance Monitor
+* Added Console Viewer
+* Added Storage Viewer
+* Added advanced debugging and site inspection tools
+
+---
+
+### 🔧 Improved
+
+#### 🎨 User Experience
+
+* Address bar now defaults to the top position
+* Auto-hide bars on scroll now defaults to off
+* Address bar position settings now stay synchronized across the browser
+
+#### 📜 Developer Tools
+
+* Improved browser inspection capabilities
+* Improved access to storage and console information
+* Improved Power Tools workflow
+
+#### 🌐 Browsing
+
+* Improved scrolling performance on complex webpages
+* Improved new-tab search behavior and keyboard handling
+
+---
+
+### 🐛 Fixed
+
+#### 🗂 Tabs & Groups
+
+* Fixed excessive tabs being created during OAuth and login flows
+* Fixed child tabs not inheriting parent tab groups
+* Fixed rare tab ID collisions that could cause tabs to be lost
+
+#### 🌐 Browsing
+
+* Fixed new-tab search box focus behavior
+* Fixed scroll position restoration after app restarts
+* Improved page restoration reliability
+
+#### 💎 Ravix Pro
+
+* Fixed Power Tools upgrade flow
+* Fixed purchase and restore workflows occasionally getting stuck
+* Improved Pro activation experience
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.11/2.1.12 introduces powerful new developer tools while improving tab management, browser performance, Ravix Pro onboarding, and overall browsing reliability.
+
+---
+
 ## [v2.1.10] - 2026-06-12
 
 ### ✨ Added
