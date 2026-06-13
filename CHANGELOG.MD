@@ -5,7 +5,74 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
-# Ravix v2.1.13 - 2026-06-13
+# Ravix v2.1.14 - 2026-06-13
+
+## ✨ Added
+
+### 🗂️ Inactive Tabs
+
+* Added automatic archiving for tabs and groups inactive for 3 days
+* Added Inactive Tabs card in Tab Manager with archive counter
+* Archived tabs are fully unloaded to reduce RAM and battery usage
+* Opening an archived tab automatically restores it to the manager
+
+### 🛠️ Full DevTools
+
+* Added a complete in-page developer toolkit
+* Includes Elements, Console, Network, Resources, Sources, and Performance panels
+* Works offline and automatically falls back on sites with strict security restrictions
+
+---
+
+## 🔧 Improved
+
+### 📑 Tabs
+
+* Improved tab organization with automatic inactive-tab archiving
+* Improved drag-and-drop behavior by dismissing menus when dragging begins
+
+### 📜 Page Scrolling
+
+* Improved scroll position restoration when returning to tabs
+* Improved handling of long, dynamically-loading pages
+* Improved scrolling support for long dropdown menus and popup lists
+
+### ⚡ Power Tools
+
+* Redesigned Power Tools into a launcher-style interface
+* Added quick access controls for Full DevTools, FPS Overlay, and Video Downloader
+* Moved advanced tools to a dedicated More Tools screen
+* Improved Pro feature visibility with dedicated PRO indicators
+
+### 🛠️ Developer Tools
+
+* Improved DevTools lifecycle handling during page navigation
+* Improved inspector startup and shutdown behavior
+* Improved integration with the Power Tools menu
+
+---
+
+## 🐛 Fixed
+
+### 📜 Page Navigation
+
+* Fixed tabs occasionally restoring to the wrong scroll position
+* Fixed viewport resets caused by recovery operations on some pages
+
+### 🛠️ Developer Tools
+
+* Fixed error messages appearing when closing DevTools
+* Fixed brief UI hangs when exiting the inspector
+
+---
+
+## 🎯 Focus
+
+Ravix 2.1.14 focuses on smarter tab management, improved page restoration, a new full-featured DevTools experience, and a streamlined Power Tools interface.
+
+
+---
+# Ravix v2.1.13 - 2026-06-12
 
 ## ✨ Added
 
