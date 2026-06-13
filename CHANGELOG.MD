@@ -5,6 +5,65 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [2.1.15] - 2026-06-14
+
+### ✨ Added
+
+#### ⚡ Power Tools
+
+* Redesigned Power Tools menu
+* Added quick-access toggle card for DevTools, FPS Overlay, Video Download, and Desktop Mode
+* Added launcher tiles for Containers, Performance Monitor, User Scripts, and Advanced Features
+* Improved DevTools persistence across app minimize and restore
+
+#### 🎨 User Interface
+
+* Redesigned browser navigation menu
+* Added quick-action tiles for Find in Page, Bookmarks, Extensions, and Add to Home Screen
+* Reorganized More menu into categorized sections
+* Added new icons for DevTools, Reader Mode, Cookie Manager, Site Permissions, and Print Page
+
+---
+
+### 🐛 Fixed
+
+#### 🗂 Container Tabs
+
+* Fixed container tabs becoming stuck on blank pages when navigating back
+* Improved Back button behavior inside container sessions
+* Improved handling of child tabs opened from container tabs
+
+#### 🎨 User Interface
+
+* Fixed incorrect Fullscreen icon display
+
+---
+
+### 🔧 Improved
+
+#### 🚀 Performance
+
+* Improved scrolling smoothness across all webpages
+* Improved rendering performance on long pages
+* Improved compositor behavior on supported devices
+* Improved page responsiveness during scrolling
+* Improved GPU rendering compatibility
+
+#### 🧭 Navigation
+
+* Improved accessibility of common browser actions
+* Improved menu organization and discoverability
+* Reduced navigation complexity for frequently used features
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.15 focuses on a redesigned Power Tools experience, improved browser navigation, smoother scrolling performance, and more reliable container tab behavior.
+
+
+---
+
 # Ravix v2.1.14 - 2026-06-13
 
 ## ✨ Added
