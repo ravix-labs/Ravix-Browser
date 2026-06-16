@@ -5,6 +5,89 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [v2.1.16] - 2026-06-15
+
+### ✨ Added
+
+#### 🔒 Privacy & Security
+
+* Added DNS-over-HTTPS (DoH) support with multiple resolver options
+* Added Encrypted Client Hello (ECH) support when using DoH
+* Added Global Privacy Control (GPC)
+* Added automatic URL tracking-parameter removal
+* Added per-site tracking protection controls
+* Added screenshot blocking option
+* Added Data Transparency screen
+* Added Startpage search engine
+* Added address-bar suggestion toggle
+
+#### 🛡 Password Manager
+
+* Added password breach detection using Have I Been Pwned
+* Added weak-password detection
+* Added password reuse detection
+* Added password health indicators
+
+#### 🔐 Database & App Security
+
+* Added SQLCipher database encryption
+* Added whole-app biometric lock
+* Added Android Autofill Framework integration
+* Added passkey and WebAuthn support
+
+---
+
+### 🔧 Improved
+
+#### 🛡 Tracking Protection
+
+* Enhanced Tracking Protection now blocks ads, analytics, social trackers, cryptominers, and fingerprinters
+* Added Total Cookie Protection for stronger cross-site tracking prevention
+* Improved WebRTC privacy protections
+* Improved anti-fingerprinting protections
+* Disabled unnecessary telemetry and background services
+
+#### 🌐 Browsing
+
+* Improved HTTPS-first browsing
+* Improved DNS privacy
+* Improved clipboard handling for copied passwords
+* Improved scroll position restoration on rebuilt tabs
+* Improved notification readability and status visibility
+
+#### 📱 Autofill & Authentication
+
+* Improved saved-password accessibility across apps and websites
+* Improved biometric authentication workflows
+* Improved passkey compatibility on supported websites
+
+---
+
+### 🐛 Fixed
+
+#### 📄 Session Restore
+
+* Fixed scroll restoration issues after session rebuilds
+* Fixed incorrect scroll recovery on long webpages
+
+#### 🔔 Notifications
+
+* Fixed notification timestamps being truncated by long status text
+* Improved notification update visibility
+
+#### ⚡ Power Tabs
+
+* Fixed scroll restoration reliability after Power Tab recovery
+* Improved session recovery behavior after extended backgrounding
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.16 focuses on privacy, security, and password management with encrypted storage, app-wide protection, advanced tracking prevention, autofill support, passkeys, and improved transparency around user data.
+
+
+---
 ## [2.1.15] - 2026-06-14
 
 ### ✨ Added
