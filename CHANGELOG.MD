@@ -5,6 +5,80 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+# Ravix v2.1.18 - 2026-6-19
+
+## 🐛 Fixed
+
+### 📦 Script Injection Engine
+
+* Fixed script injection failure when enabled scripts exceed Gecko WebExtension message size limits (~1MB)
+* Fixed silent injection breakdown when multiple scripts (including GM shim + `@require` bundles) are pushed in a single payload
+* Fixed issue where injection stopped working after reaching script count/size threshold
+
+### 🔧 Injection System Reliability
+
+* Reworked script dispatch flow to prevent oversized single-message payloads
+* Introduced segmented script transmission to maintain stable delivery across the extension bridge
+
+---
+
+### 📡 New Injection Pipeline
+
+* Added structured script transport system:
+
+  * `scriptsBegin`
+  * `scriptsItem` (per script transfer)
+  * `scriptsEnd`
+* Background service now reconstructs full script batch before forwarding to content injection layer
+* Prevents Gecko native transport message drop without changing internal content-script communication
+
+---
+
+### 📱 Tab Lifecycle / Session Recovery
+
+* Fixed issue where tabs became permanently non-functional after Android or Gecko session/process termination
+* Fixed broken delegate reattachment after `replaceDeadSession()` replaces a killed `GeckoSession`
+* Fixed regression where restored sessions were skipped due to stale `delegatesRegistered` state
+
+---
+
+## 🔧 Improved
+
+### 🧠 Tab Delegate System
+
+* Improved reliability of `attachTabToView()` during session replacement scenarios
+* Improved delegate registration logic to properly handle recreated sessions
+* Improved tab recovery consistency after system-level process kills
+
+---
+
+### ♻️ Session Restoration
+
+* Improved behavior of `replaceDeadSession()` to fully reset delegate state
+* Improved tab reinitialization flow to ensure restored sessions behave identically to fresh sessions
+* Improved resilience against Android background process eviction
+
+---
+
+## ⚡ Stability
+
+* Reduced risk of silent injection failure under high script load
+* Eliminated permanent “dead tab” state after session recreation
+* Strengthened extension-to-native communication reliability without altering public APIs
+
+---
+
+## 🎯 Focus
+
+Ravix 2.1.18 focuses on **hardening the injection pipeline under Gecko transport limits** and **fixing session recovery edge cases that could permanently break tabs after process death**, improving overall stability in long-running browsing sessions.
+
+---
+## [v2.1.17] - 2026-06-15
+
+### 🐛 Fixed
+* Fixed start up crash issue
+---
+
 ## [v2.1.16] - 2026-06-15
 
 ### ✨ Added
