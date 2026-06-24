@@ -5,6 +5,74 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [2.1.19] - 2026-06-18
+
+### ✨ Added
+
+#### 🎨 User Experience
+
+* Added swipe animations when switching between tabs
+* Added "Open in App" option in the security panel for supported websites
+* Automatically detects compatible installed apps such as YouTube, Facebook, and Instagram
+
+---
+
+### 🐛 Fixed
+
+#### 📜 Userscripts
+
+* Fixed userscripts not running when many scripts were enabled
+* Improved userscript delivery and initialization reliability
+
+#### 🗂 Tabs & Session Recovery
+
+* Fixed dead tabs after Android terminated background processes
+* Fixed tabs and tab groups occasionally being lost after extended background periods
+* Fixed Power Tabs not resuming correctly after cold starts
+* Fixed session backups missing scroll position and browsing history
+* Improved session restoration reliability
+
+#### 🌐 Browsing
+
+* Fixed some streaming websites unexpectedly reloading during video playback
+* Fixed navigation bar occasionally remaining visible in fullscreen mode
+* Fixed Back button behavior while watching fullscreen videos
+* Fixed Back button incorrectly showing the exit prompt when multiple tabs were open
+
+#### 📱 External Apps & Files
+
+* Fixed links and files from external applications opening inside the source app instead of Ravix
+* Fixed downloaded PDF files failing to open from notifications
+
+#### ⚡ Stability
+
+* Fixed release-build startup crashes on Play Store versions
+* Fixed background time tracking after device sleep
+* Improved overnight recovery and browser state persistence
+
+---
+
+### 🔧 Improved
+
+#### 🔄 Session Management
+
+* Improved recovery from Android process termination
+* Improved Power Tab startup behavior
+* Improved backup reliability and crash recovery
+
+#### 🎥 Media Experience
+
+* Improved fullscreen handling on video websites
+* Improved media playback stability
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.19 focuses on session reliability, Power Tab recovery, userscript stability, media playback improvements, and smoother navigation throughout the browser.
+
+---
+
 # Ravix v2.1.18 - 2026-6-19
 
 ## 🐛 Fixed
