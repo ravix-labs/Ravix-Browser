@@ -5,6 +5,77 @@ All notable changes to Ravix Browser will be documented in this file.
 The format is based on Keep a Changelog and follows Semantic Versioning where practical.
 ---
 
+## [2.1.22] - 2026-06-21
+
+### ✨ Added
+
+#### 🎨 User Experience
+
+* Added a new animated splash screen
+* Added smooth swipe animations when switching tabs
+* Added support for custom search engines
+
+---
+
+### 🔄 Changed
+
+#### ⚡ Power Tabs
+
+* Increased Ravix Pro Power Tab limit from **3** to **5**
+
+#### 📦 Containers
+
+* Free users can create **1** container
+* Ravix Pro users can create unlimited containers
+* Existing containers remain accessible after a subscription expires
+
+#### 🌐 Security Panel
+
+* Restored **Open in App** as a user-initiated action
+
+---
+
+### 🐛 Fixed
+
+#### 🗂 Tabs & Session Recovery
+
+* Fixed tabs and groups occasionally being lost after process termination
+* Fixed tabs and groups not being saved after force-closing the browser
+* Fixed dead tabs after Android terminated background processes
+* Fixed Power Tabs not resuming correctly after cold starts
+* Fixed session backups missing scroll position and browsing history
+* Improved session restoration reliability
+
+#### 🌐 Browsing
+
+* Fixed Pull-to-Refresh reliability and positioning
+* Fixed Pull-to-Refresh activating unexpectedly on page load
+* Fixed Back button behavior while watching fullscreen videos
+* Fixed script injection causing unexpected page reloads
+
+#### 📱 External Apps
+
+* Fixed links and files from external applications opening inside the source app
+
+#### 💻 Code Editor
+
+* Added proper Select All support for the built-in code editor
+
+#### ⚡ Stability
+
+* Fixed Glide-related crashes during activity shutdown
+* Fixed SQLCipher compatibility with 16KB page-size devices
+* Fixed native library compatibility with 16KB page-size devices
+* Fixed AndroidX and Material build compatibility issues
+
+---
+
+### 🎯 Focus
+
+Ravix 2.1.22 focuses on stronger session recovery, smoother browser interactions, improved customization, and better compatibility with modern Android devices.
+
+---
+
 ## [2.1.19] - 2026-06-18
 
 ### ✨ Added
